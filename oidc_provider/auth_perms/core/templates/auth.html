@@ -1,0 +1,445 @@
+<!-- Styles -->
+{% if not standalone %}
+    {% set class = 'class=a-tab-panel' %}
+{% endif %}
+
+{% for style in styles %}
+    <link href="{{ style }}" rel="stylesheet">
+{% endfor %}
+
+<!-- Start embed -->
+<div class="a-body">
+    <div class="a-top-line">
+        <div class="a-container">
+            <div class="a-headbar">
+                <div id="logo" class="a-logo">
+                    Logo
+                </div>
+                <div style="display: flex;">
+                    <div id="languages" class="a-languages">
+                        <div class="a-dropdown">
+                            <span class="a-dropdown-toggle">
+                                <span class="a-icon a-icon-services a-icon-flag-{{ current_language.get('code') }}">
+                                </span>
+                                {{ _(current_language.get('name')) }}
+                                <span class="a-icon a-icon-chevron">
+                                    <svg viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="a-dropdown-content">
+                                <ul class="a-dropdown-list">
+                                    {% if language_information %}
+                                        {% for language in language_information %}
+                                            {% if language.get('block') %}
+                                                <li class="a-dropdown-item a-dropdown-item-disabled a-tooltip">
+                                                    <span class="a-dropdown-link a-dropdown-link-disabled">
+                                                        <div>
+                                                            <span class="a-name-icon a-icon-flag-cn">
+                                                            </span>
+                                                            <span class="a-name">
+                                                                {{ _(language.get('name')) }}
+                                                            </span>
+                                                        </div>
+                                                    </span>
+                                                    <span class="a-tooltiptext">
+                                                        <span>{{ _("Comming Soon...") }}</span>
+                                                        {{ _("Use other language please. We are working on translation") }}
+                                                    </span>
+                                                </li>
+                                            {% else %}
+                                                <li class="a-dropdown-item">
+                                                    <a class="a-dropdown-link" href="#" data-language="{{ language.get('code') }}">
+                                                        <div>
+                                                            <span class="a-name-icon a-icon-flag-{{ language.get('code') }}">
+                                                            </span>
+                                                            <span class="a-name">
+                                                                {{ _(language.get('name')) }}
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% else %}
+                                        <li class="a-dropdown-item">
+                                            <a class="a-dropdown-link" href="#" data-language="{{ current_language.get('code') }}">
+                                                <div>
+                                                    <span class="a-name-icon a-icon-flag-{{ current_language.get('code') }}">
+                                                    </span>
+                                                    <span class="a-name">
+                                                        {{ _(current_language.get('name')) }}
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="a-main">
+        <div class="a-container">
+            <!-- Heading -->
+            <div class="a-heading">
+                <h1 class="a-page-title">{{ _("Welcome to EcoSystem 54 based service") }}</h1>
+                <p class="a-page-subtitle">{{ _("Please, choose the option you need") }}</p>
+            </div>
+
+            <div class="a-tabset-signin tabset">
+
+                <!-- Tab SignIn -->
+                <input id="tabSignIn" type="radio" name="tabset" aria-controls="Sign In" class="active" checked>
+                <label for="tabSignIn" style="margin-bottom: 15px;">
+                    <div id="tabSignInInner">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19,3H5C3.89,3 3,3.89 3,5V9H5V5H19V19H5V15H3V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M10.08,15.58L11.5,17L16.5,12L11.5,7L10.08,8.41L12.67,11H3V13H12.67L10.08,15.58Z">
+                            </path>
+                        </svg>
+                        <span>{{ _("Sign In") }}</span>
+                    </div>
+                </label>
+
+                <!-- Tab SignUp -->
+                <input id="tabSignUp" type="radio" name="tabset" aria-controls="Sign Up">
+                <label for="tabSignUp" style="margin-bottom: 15px;">
+                    <div id="tabSignUpInner">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4M15,5.9C16.16,5.9 17.1,6.84 17.1,8C17.1,9.16 16.16,10.1 15,10.1A2.1,2.1 0 0,1 12.9,8A2.1,2.1 0 0,1 15,5.9M4,7V10H1V12H4V15H6V12H9V10H6V7H4M15,13C12.33,13 7,14.33 7,17V20H23V17C23,14.33 17.67,13 15,13M15,14.9C17.97,14.9 21.1,16.36 21.1,17V18.1H8.9V17C8.9,16.36 12,14.9 15,14.9Z">
+                            </path>
+                        </svg>
+                        <span>{{ _("Sign Up") }}</span>
+                    </div>
+                </label>
+
+                {% if not standalone %}
+                <!-- Button Help me 3 -->
+                <div class="a-collapse-list">
+                    <input class="a-collapse-open" type="checkbox" id="collapseBtnHelp">
+                    <label class="a-btn a-collapse-btn" for="collapseBtnHelp">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="#fff;"
+                                d="M19.79,15.41C20.74,13.24 20.74,10.75 19.79,8.59L17.05,9.83C17.65,11.21 17.65,12.78 17.06,14.17L19.79,15.41M15.42,4.21C13.25,3.26 10.76,3.26 8.59,4.21L9.83,6.94C11.22,6.35 12.79,6.35 14.18,6.95L15.42,4.21M4.21,8.58C3.26,10.76 3.26,13.24 4.21,15.42L6.95,14.17C6.35,12.79 6.35,11.21 6.95,9.82L4.21,8.58M8.59,19.79C10.76,20.74 13.25,20.74 15.42,19.78L14.18,17.05C12.8,17.65 11.22,17.65 9.84,17.06L8.59,19.79M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z" />
+                        </svg>
+                        <span>{{ _("Help Me") }}</span>
+                    </label>
+                    <div class="a-collapse-painel">
+                        <div class="a-tab-panels">
+                            <!-- 1 -->
+                            <div class="a-step">
+                                <h4 class="a-heading">{{ _("1. Download application") }}</h4>
+                                <p>{{ _("First of all you need to download EcoSystem 54 application.") }}</p>
+                                <div class="a-apps" style="display: flex;">
+                                    <div style="text-align: center;">
+                                        <div><small>{{ _("Android") }}</small></div>
+                                        <img style="width: 100px;" src="data:image/png;base64,{{ android_app }}" alt="">
+                                    </div>
+                                    <div class="a-v-hr"></div>
+                                    <div style="text-align: center;">
+                                        <div><small>{{ _("iPhone") }}</small></div>
+                                        <img style="width: 100px;" src="data:image/png;base64,{{ ios_app }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="a-step">
+                                <h4 class="a-heading">
+                                    {{ _("2. Create an account") }}
+                                </h4>
+                                <p>{{ _("Create a new EcoSystem 54 account via sign up form or scanning QR code.") }}</p>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="a-step">
+                                <h4 class="a-heading">
+                                    {{ _("3. Contact your administrator") }}
+                                    <div class="a-tooltip">
+                                        <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M11,15H13V17H11V15M11,7H13V13H11V7M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z" />
+                                        </svg>
+                                        <span class="a-tooltiptext">
+                                            <span>{{ _("Account Verification") }}</span>
+                                            {{ _("After the registration process, you do not have any rights to view / create / delete content. After your confirmation, the administrator will assign you personal access.") }}
+                                        </span>
+                                    </div>
+                                </h4>
+                                <p>{{ _("You have been successfully registered. Please contact your administrator to define your role and get an access to the system.") }}</p>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="a-step">
+                                <h4 class="a-heading">
+                                    {{ _("4. So easy to use") }}
+                                    <div class="a-tooltip">
+                                        <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M11,15H13V17H11V15M11,7H13V13H11V7M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z" />
+                                        </svg>
+                                        <span class="a-tooltiptext">
+                                            <span>{{ _("What is Profile service?") }}</span>
+                                            {{ _("Profile service is the right palce where you can add/change you personal information. In additional to this, you can also check you personal list of permissions.") }}
+                                        </span>
+                                    </div>
+                                </h4>
+                                <p>{{ _("As soon as administrator grants access, profile service will be available for you.") }}
+                                    <a class="a-link" href="#">{{ _("Go to Profile service") }}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="a-tab-panels">
+                    <!-- Content SignIn -->
+                    <div id="contentSignIn" class="a-tab-panel">
+                        <div class="{% if ((not standalone) and (not is_auth_service)) and sso_mode %} a-tabset-signin {% else %} a-tabset {% endif %} tabset">
+                            <!-- Tab SignIn Form -->
+                            {% if not standalone %}
+                            <input id="tabSignInForm" type="radio" name="tabsetSignIn" class="active" checked>
+                            <label for="tabSignInForm">
+                                <div id="tabSignInFormInner">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20M8.5,12A1.5,1.5 0 0,0 7,10.5A1.5,1.5 0 0,0 5.5,12A1.5,1.5 0 0,0 7,13.5A1.5,1.5 0 0,0 8.5,12M13,10.89C12.39,10.33 11.44,10.38 10.88,11C10.32,11.6 10.37,12.55 11,13.11C11.55,13.63 12.43,13.63 13,13.11V10.89Z">
+                                        </path>
+                                    </svg>
+                                    <span>{{ _("Login/Password") }}</span>
+                                </div>
+                            </label>
+                            <!-- Tab sign in with AUTH service -->
+                            {% if not standalone and not is_auth_service and sso_mode %}
+                            <input id="tabSignInAUTH" type="radio" name="tabsetSignIn">
+                            <label for="tabSignInAUTH" id="ssoSignIn">
+                                <div id="tabSignInAUTHInner">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                                d="M19,3H5C3.89,3 3,3.89 3,5V9H5V5H19V19H5V15H3V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M10.08,15.58L11.5,17L16.5,12L11.5,7L10.08,8.41L12.67,11H3V13H12.67L10.08,15.58Z">
+                                        </path>
+                                    </svg>
+                                    <span style="white-space: nowrap">{{ _("Sign In with Auth") }}</span>
+                                </div>
+                            </label>
+                            {% endif %}
+                            <!-- Tab SignIn QR -->
+                            <input id="tabSignInQR" type="radio" name="tabsetSignIn">
+                            <label for="tabSignInQR">
+                                <div id="tabSignInQRInner">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M3,11H5V13H3V11M11,5H13V9H11V5M9,11H13V15H11V13H9V11M15,11H17V13H19V11H21V13H19V15H21V19H19V21H17V19H13V21H11V17H15V15H17V13H15V11M19,19V15H17V19H19M15,3H21V9H15V3M17,5V7H19V5H17M3,3H9V9H3V3M5,5V7H7V5H5M3,15H9V21H3V15M5,17V19H7V17H5Z">
+                                        </path>
+                                    </svg>
+                                    <span>{{ _("QR code") }}</span>
+                                </div>
+                            </label>
+                            {% endif %}
+                            <div class="a-tab-panels" style="box-shadow: none;padding: 0;border: none;">
+                                    <!-- Content SignIn Form -->
+                                <div id="contentSignInForm" {{ class }}>
+                                    <h3 class="a-tab-heading">{{ _("Sign into your EcoSystem 54 account via sign in form") }}</h3>
+                                    <form id="formSignIn" action="">
+                                        <div class="a-column a-column-2">
+                                            <div class="a-form-group">
+                                                <label for="inputEmailSignIn">{{ _("E-mail/Login") }}</label>
+                                                <input id="inputEmailSignIn" class="a-form-control" type="email" name="email_signin" placeholder="{{ _('Enter email or login') }}" required="required">
+                                            </div>
+                                            <div class="a-form-group">
+                                                <label for="inputPassword">{{ _("Password") }}</label>
+                                                <input id="inputPassword" class="a-form-control" type="password" name="password_signin" placeholder="{{ _('Enter password') }}" required="required">
+                                            </div>
+                                        </div>
+                                        <button id="btnSignInForm" class="a-btn a-btn-primary" style="width: 100%;">
+                                            <svg viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19,3H5C3.89,3 3,3.89 3,5V9H5V5H19V19H5V15H3V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M10.08,15.58L11.5,17L16.5,12L11.5,7L10.08,8.41L12.67,11H3V13H12.67L10.08,15.58Z">
+                                                </path>
+                                            </svg>
+                                            <span>{{ _("Sign In") }}</span>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <!-- Content SignIn Auth -->
+                                {% if not standalone and not is_auth_service and sso_mode %}
+                                <div id="contentSignInAUTH" class="a-tab-panel">
+                                </div>
+                                {% endif %}
+                                <!-- Content SignIn QR -->
+                                <div id="contentSignInQR" class="a-tab-panel">
+                                    <h3 class="a-tab-heading">{{ _("Sign into your EcoSystem 54 account by scanning QR code") }}</h3>
+                                    <div class="a-qr" id="qrLogin">
+                                        <div id="qrLoginExpired">
+                                           <h2 class="qrExpiredLabel">QR code expired</h2>
+                                           <span>
+                                                {{ _("Get a new QR code") }}
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z"></path>
+                                            </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="a-qr-generate" id="updateSignInQR">
+                                        {{ _("Get a new QR code") }}
+                                        <svg fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Content SignUp -->
+                    <div id="contentSignUp" class="a-tab-panel">
+                        <div class="a-tabset tabset">
+                            <!-- Tab SignUp Form -->
+                            {% if not standalone %}
+                            <input id="tabSignUpForm" type="radio" name="tabsetinSignUp" class="active" checked>
+                            <label for="tabSignUpForm">
+                                <div id="tabSignUpFormInner">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20M8.5,12A1.5,1.5 0 0,0 7,10.5A1.5,1.5 0 0,0 5.5,12A1.5,1.5 0 0,0 7,13.5A1.5,1.5 0 0,0 8.5,12M13,10.89C12.39,10.33 11.44,10.38 10.88,11C10.32,11.6 10.37,12.55 11,13.11C11.55,13.63 12.43,13.63 13,13.11V10.89Z">
+                                        </path>
+                                    </svg>
+                                    <span>{{ _("Register form") }}</span>
+                                </div>
+                            </label>
+
+                                <!-- Tab SignUp QR -->
+                            <input id="tabSignUpQR" type="radio" name="tabsetinSignUp">
+                            <label for="tabSignUpQR">
+                                <div id="tabSignUpQRInner">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M3,11H5V13H3V11M11,5H13V9H11V5M9,11H13V15H11V13H9V11M15,11H17V13H19V11H21V13H19V15H21V19H19V21H17V19H13V21H11V17H15V15H17V13H15V11M19,19V15H17V19H19M15,3H21V9H15V3M17,5V7H19V5H17M3,3H9V9H3V3M5,5V7H7V5H5M3,15H9V21H3V15M5,17V19H7V17H5Z">
+                                        </path>
+                                    </svg>
+                                    <span>{{ _("QR code") }}</span>
+                                </div>
+                            </label>
+                            {% endif %}
+                            <div class="a-tab-panels" style="box-shadow: none;padding: 0;border: none;">
+                                <!-- Content SignUp Form -->
+                                <div id="contentSignUpForm" {{ class }}>
+                                    <h3 class="a-tab-heading">{{ _("Create a new EcoSystem 54 account via sign up form") }}</h3>
+                                    <form id="formSignUp" action="">
+                                        <div class="a-column a-column-2">
+                                            <div class="a-form-group">
+                                                <label for="inputFirstName">{{ _("First name") }}</label>
+                                                <input id="inputFirstName" class="a-form-control" type="text" name="first_name_signup" placeholder="{{ _('Enter first name') }}" required="required">
+                                            </div>
+                                            <div class="a-form-group">
+                                                <label for="inputSurname">{{ _("Surname") }}</label>
+                                                <input id="inputSurname" class="a-form-control" type="text" name="surname_signup" placeholder="{{ _('Enter surname') }}" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="a-column a-column-1">
+                                            <div class="a-form-group">
+                                                <label for="inputEmailSignUp">{{ _("E-mail/Login") }}</label>
+                                                <input id="inputEmailSignUp" class="a-form-control" type="email" name="email_signup" placeholder="{{ _('Enter email or login') }}" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="a-column a-column-2">
+                                            <div class="a-form-group">
+                                                <label for="inputPasswordSignUp">{{ _("Password") }}</label>
+                                                <input id="inputPasswordSignUp" class="a-form-control" type="password" name="password_signup" placeholder="{{ _('Enter password') }}" required="required">
+                                            </div>
+                                            <div class="a-form-group">
+                                                <label for="inputPasswordSignUpConfirm">{{ _("Confirm password") }}</label>
+                                                <input id="inputPasswordSignUpConfirm" class="a-form-control" type="password" name="password_confirm_signup" placeholder="{{ _('Confirm password') }}" required="required">
+                                            </div>
+                                        </div>
+                                        <button class="a-btn a-btn-primary" id="btnSignUpForm" style="width: 100%;">
+                                            <svg viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4M15,5.9C16.16,5.9 17.1,6.84 17.1,8C17.1,9.16 16.16,10.1 15,10.1A2.1,2.1 0 0,1 12.9,8A2.1,2.1 0 0,1 15,5.9M4,7V10H1V12H4V15H6V12H9V10H6V7H4M15,13C12.33,13 7,14.33 7,17V20H23V17C23,14.33 17.67,13 15,13M15,14.9C17.97,14.9 21.1,16.36 21.1,17V18.1H8.9V17C8.9,16.36 12,14.9 15,14.9Z">
+                                                </path>
+                                            </svg>
+                                            <span>{{ _("Sign Up") }}</span>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <!-- Content SignUp QR -->
+                                <div id="contentSignUpQR" class="a-tab-panel">
+                                    <h3 class="a-tab-heading">{{ _("Create a new EcoSystem 54 account by scanning QR code") }}
+                                    </h3>
+                                    <div class="a-qr" id="qrRegistration">
+                                        <div id="qrRegistrationExpired">
+                                            <h2 class="qrExpiredLabel">QR code expired</h2>
+                                            <span>
+                                                {{ _("Get a new QR code") }}
+                                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="a-qr-generate" id="updateSignUpQR">
+                                        {{ _("Get a new QR code") }}
+                                        <svg fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JS -->
+
+
+<script>
+    const service_name = "{{ service_name }}";
+    const authentication_url = "{{ authentication_url }}";
+    const registration_url = "{{ registration_url }}";
+    const redirect_url_after_authentication = "{{ redirect_url_after_authentication }}";
+    {% if depended_services %}
+    const depended_services = {{ depended_services|safe }};
+    {% else %}
+    const depended_services = [];
+    {% endif %}
+
+{% if not standalone %}
+    const save_session_url = "{{ save_session_url }}";
+    const get_qr_url = "{{ get_qr_url }}";
+    const qr_login_url = "{{ qr_login_url }}";
+
+    const authentication_content = "{{ authentication_content|safe }}";
+    const authentication_qr_token = {{ authentication_qr_token|safe }};
+    const registration_content = "{{ registration_content|safe }}";
+    const registration_qr_token = {{ registration_qr_token|safe }};
+
+    {% if not is_auth_service and sso_mode %}
+    const sso_generation_url = "{{ sso_generation_url }}";
+    const sso_login_url = "{{ sso_login_url }}";
+    {% endif %}
+{% endif %}
+</script>
+
+{% for script in scripts %}
+    <script src="{{ script }}"></script>
+{% endfor %}
+<!-- End JS -->
+<!-- End embed -->

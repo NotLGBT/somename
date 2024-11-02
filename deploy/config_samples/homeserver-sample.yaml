@@ -1,0 +1,66 @@
+# Configuration file for Synapse.
+#
+# This is a YAML file: see [1] for a quick introduction. Note in particular
+# that *indentation is important*: all the elements of a list or dictionary
+# should have the same indentation.
+#
+# [1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+#
+# For more information on how to configure Synapse, including a complete accounting of
+# each option, go to docs/usage/configuration/config_documentation.md or
+# https://element-hq.github.io/synapse/latest/usage/configuration/config_documentation.html
+server_name: "<SERVER_DOMAIN>"
+pid_file: /path/to/your/project/synapse/homeserver.pid
+listeners:
+  - port: 8008
+    tls: false
+    type: http
+    x_forwarded: true
+    bind_addresses: ['127.0.0.1']
+    resources:
+      - names: [client, federation]
+        compress: false
+database:
+  name: psycopg2
+  args:
+    user: <DB_USER>
+    password: <DB_PASS>
+    dbname: <DB_NAME>
+    host: localhost
+    cp_min: 5
+    cp_max: 10
+log_config: "/path/to/your/project/synapse/synapse.log.config"
+media_store_path: /path/to/your/project/synapse/media_store
+registration_shared_secret: "<REG_SHARED_SECRET>"
+report_stats: false
+macaroon_secret_key: "<MAC_SECRET_KEY>"
+form_secret: "<FORM_SECRET>"
+signing_key_path: "/path/to/your/project/synapse/synapse.signing.key"
+trusted_key_servers:
+  - server_name: "matrix.org"
+suppress_key_server_warning: true
+max_upload_size: 100M
+enable_registration: false
+matrix_synapse_federation_enabled: false
+matrix_synapse_federation_port_enabled: false
+search_all_users: true
+prefer_local_users: true
+turn_uris: ["turn:<SERVER_DOMAIN>?transport=udp","turn:<SERVER_DOMAIN>?transport=tcp"]
+turn_shared_secret: "<TURN_SHARED_SECRET>"
+turn_user_lifetime: 86400000
+matrix_static_files_file_matrix_support_enabled: true
+
+oidc_providers:
+  - idp_id: <OIDC_ID>
+    idp_name: <OIDC_NAME>
+    idp_brand: "<OIDC_NAME>"  # optional: styling hint for clients
+    issuer: "http(s)://<OIDC_SERVICE_DOMAIN>"
+    client_id: "<CLIENT_ID>"
+    client_secret: "<CLIENT_SECRET>"
+    scopes: ["openid"]
+    user_mapping_provider:
+      config:
+        localpart_template: "{{ user.given_name|lower }}"
+        display_name_template: "{{ user.name }}"
+
+# vim:ft=yaml

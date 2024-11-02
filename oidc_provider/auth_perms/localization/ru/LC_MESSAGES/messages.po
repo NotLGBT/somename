@@ -1,0 +1,1062 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-08-09 11:26+0300\n"
+"PO-Revision-Date: 2020-11-03 14:30+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: submodules/auth_perms/core/actor_view.py:98
+#: submodules/auth_perms/core/auth_view.py:267
+#: submodules/auth_perms/core/auth_view.py:368
+#: submodules/auth_perms/core/auth_view.py:671
+#: submodules/auth_perms/core/auth_view.py:823
+#: submodules/auth_perms/core/auth_view.py:843
+#: submodules/auth_perms/core/auth_view.py:867
+#: submodules/auth_perms/core/auth_view.py:1079
+#: submodules/auth_perms/core/auth_view.py:1595
+#: submodules/auth_perms/core/invite_link_view.py:52
+msgid "Invalid request data."
+msgstr "Неверные данные запроса."
+
+#: submodules/auth_perms/core/actor_view.py:102
+#: submodules/auth_perms/core/auth_view.py:294
+#: submodules/auth_perms/core/auth_view.py:595
+#: submodules/auth_perms/core/auth_view.py:714
+#: submodules/auth_perms/core/auth_view.py:726
+#: submodules/auth_perms/core/auth_view.py:995
+#: submodules/auth_perms/core/auth_view.py:1073
+#: submodules/auth_perms/core/auth_view.py:1601
+msgid "Signature verification failed."
+msgstr "Ошибка проверки подписи."
+
+#: submodules/auth_perms/core/auth_view.py:94
+#: submodules/auth_perms/core/auth_view.py:317
+msgid "Email you have inputted is invalid. Please check it."
+msgstr "E-mail адрес, который вы ввели, неверный. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:101
+msgid ""
+"Login you have inputted is invalid. Please check it. Login length must be"
+" from 3 to 36 and it must contain alphanumeric values, dots or "
+"underscores"
+msgstr ""
+"Неверный логин. Длина логина должна быть от 3 до 36 символов и он должен "
+"содержать буквенно-численные значения, точки или подчеркивания"
+
+#: submodules/auth_perms/core/auth_view.py:107
+#, fuzzy
+msgid "Phone number you have inputted is invalid. Please check it."
+msgstr "E-mail адрес, который вы ввели, неверный. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:205
+msgid ""
+"Some error occurred while actor registration. Please contact the "
+"administrator."
+msgstr ""
+"Возникла какая-то ошибка с регистрацией эктора. Пожалуйста, обратитесь к "
+"администратору."
+
+#: submodules/auth_perms/core/auth_view.py:211
+msgid "You are successfully registered."
+msgstr "Вы успешно зарегистрировались."
+
+#: submodules/auth_perms/core/auth_view.py:285
+msgid ""
+"There is no verification data based on received data. \n"
+" Please get new QR code."
+msgstr ""
+"Отсутствует верификационная информация, основанная на полученных данных."
+" \n"
+" Пожалуйста обновите QR код."
+
+#: submodules/auth_perms/core/auth_view.py:309
+msgid "Actor with such email already exists."
+msgstr "Эктор с таким e-mail адресом уже существует."
+
+#: submodules/auth_perms/core/auth_view.py:323
+msgid "There is no email in received data."
+msgstr "Отсутствует e-mail адрес в полученных данных."
+
+#: submodules/auth_perms/core/auth_view.py:340
+msgid ""
+"Some error occurred while creating actor. Please try again or contact the"
+" administrator"
+msgstr ""
+"Возникла какая-то ошибка при создании эктора. Пожалуйста, попробуйте "
+"снова или обратитесь к администратору"
+
+#: submodules/auth_perms/core/auth_view.py:382
+msgid "Password length too short. Minimum 4 characters"
+msgstr "Пароль слишком короткий. Используйте 4 и более символа"
+
+#: submodules/auth_perms/core/auth_view.py:387
+msgid "Password and password confirmation do not match. Please check it."
+msgstr "Пароль и подтверждение пароля не совпадают. Пожалуйста, проверьте их."
+
+#: submodules/auth_perms/core/auth_view.py:404
+#, fuzzy
+msgid "Actor with such email already exists"
+msgstr "Эктор с таким e-mail адресом уже существует."
+
+#: submodules/auth_perms/core/auth_view.py:406
+#, fuzzy
+msgid "Actor with such login already exists"
+msgstr "Эктор с таким e-mail адресом уже существует."
+
+#: submodules/auth_perms/core/auth_view.py:408
+#, fuzzy
+msgid "Actor with such phone number already exists"
+msgstr "Эктор с таким e-mail адресом уже существует."
+
+#: submodules/auth_perms/core/auth_view.py:419
+msgid "Invalid request data type."
+msgstr "Неверный тип данных запроса."
+
+#: submodules/auth_perms/core/auth_view.py:424
+#, fuzzy
+msgid "Invalid parameter for login in optional data."
+msgstr "Неверный параметр email в опциональных данных."
+
+#: submodules/auth_perms/core/auth_view.py:432
+msgid "Invalid parameter password in optional data."
+msgstr "Неверный параметр password в опциональных данных."
+
+#: submodules/auth_perms/core/auth_view.py:498
+msgid "Some error occurred while creating actor. Please try again."
+msgstr ""
+"Возникла какая-то ошибка при создании эктора. Пожалуйста, попробуйте "
+"снова."
+
+#: submodules/auth_perms/core/auth_view.py:587
+msgid "Unknown service."
+msgstr "Неизвестный сервис."
+
+#: submodules/auth_perms/core/auth_view.py:633
+#: submodules/auth_perms/core/auth_view.py:1416
+msgid ""
+"Some error occurred while creating verification data. Please try again or"
+" contact the administrator."
+msgstr ""
+"Возникла какая-то ошибка при создании верификационных данных. Пожалуйста,"
+" попробуйте снова или обратитесь к администратору."
+
+#: submodules/auth_perms/core/auth_view.py:683
+msgid ""
+"There is no verification data based on received data. \n"
+" Please get new QR code. "
+msgstr ""
+"Отсутствует верификационная информация, основанная на полученных данных."
+" \n"
+" Пожалуйста, обновите QR код."
+
+#: submodules/auth_perms/core/auth_view.py:695
+msgid ""
+"There is no your public key for your actor. Please contact the "
+"administrator."
+msgstr ""
+"Отсутствует публичный ключ для вашего эктора. Пожалуйста, свяжитесь с "
+"администратором."
+
+#: submodules/auth_perms/core/auth_view.py:738
+msgid "There is no such actor. Please contact the administrator"
+msgstr "Такого эктора не существует. Пожалуйста, свяжитесь с администратором."
+
+#: submodules/auth_perms/core/auth_view.py:744
+msgid ""
+"Auth service is unreachable. Please try again or contact the "
+"administrator."
+msgstr ""
+"Аутентификационный сервис недоступен. Пожалуйста, попробуйте снова или "
+"обратитесь к администратору."
+
+#: submodules/auth_perms/core/auth_view.py:755
+msgid ""
+"Some error occurred with getting your authentication token. Please try "
+"again or contact the administrator."
+msgstr ""
+"Возникла какая-то ошибка с получением вашего аутентификационного токена. "
+"Пожалуйста, попробуйте снова или свяжитесь с администратором."
+
+#: submodules/auth_perms/core/auth_view.py:885
+msgid "There is no actor with such email. Please check it."
+msgstr "Эктора с таким e-mail адресом не существует. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:887
+#, fuzzy
+msgid "There is no actor with such login. Please check it."
+msgstr "Эктора с таким e-mail адресом не существует. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:889
+#, fuzzy
+msgid "There is no actor with such phone number. Please check it."
+msgstr "Эктора с таким e-mail адресом не существует. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:891
+#, fuzzy
+msgid "There is no actor with such email and login. Please check it."
+msgstr "Эктора с таким e-mail адресом не существует. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:893
+#, fuzzy
+msgid "There is no actor with such data. Please check it."
+msgstr "Эктора с таким e-mail адресом не существует. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:897
+#: submodules/auth_perms/core/auth_view.py:953
+#, fuzzy
+msgid "There is no actor with such uuid."
+msgstr "Эктора с таким e-mail адресом не существует. Пожалуйста, проверьте его."
+
+#: submodules/auth_perms/core/auth_view.py:914
+#: submodules/auth_perms/core/auth_view.py:962
+msgid "There is no verification data based on received data."
+msgstr "Отсутствует верификационная информация, основанная на полученных данных."
+
+#: submodules/auth_perms/core/auth_view.py:941
+msgid "Password verification failed."
+msgstr "Неверный пароль."
+
+#: submodules/auth_perms/core/auth_view.py:971
+#, fuzzy
+msgid ""
+"There is no your public key for your actor. Please contact the "
+"administrator.\n"
+msgstr ""
+"Отсутствует публичный ключ для вашего эктора. Пожалуйста, свяжитесь с "
+"администратором."
+
+#: submodules/auth_perms/core/auth_view.py:1063
+#, fuzzy
+msgid "Successfully executed"
+msgstr "Вы успешно зарегистрировались."
+
+#: submodules/auth_perms/core/auth_view.py:1069
+#, fuzzy
+msgid "Error with getting actor"
+msgstr "Ошибка с получением соли."
+
+#: submodules/auth_perms/core/auth_view.py:1071
+#: submodules/auth_perms/core/decorators.py:197
+#: submodules/auth_perms/core/decorators.py:242
+msgid "APT54 expired."
+msgstr "APT54 просрочен."
+
+#: submodules/auth_perms/core/auth_view.py:1075
+msgid "Actor must be Root"
+msgstr "Эктор должен обладать Root правами"
+
+#: submodules/auth_perms/core/auth_view.py:1077
+msgid "Invalid APT54 was sent."
+msgstr "Получен невалидный APT54"
+
+#: submodules/auth_perms/core/auth_view.py:1105
+#: submodules/auth_perms/core/auth_view.py:1146
+#: submodules/auth_perms/core/auth_view.py:1499
+#: submodules/auth_perms/core/auth_view.py:1673
+#: submodules/auth_perms/core/invite_link_view.py:46
+msgid "Invalid request type."
+msgstr "Неверный тип запроса."
+
+#: submodules/auth_perms/core/auth_view.py:1117
+msgid "Session token successfully saved."
+msgstr "Токен сессии успешно сохранен."
+
+#: submodules/auth_perms/core/auth_view.py:1153
+#: submodules/auth_perms/core/auth_view.py:1507
+msgid "There is no session token."
+msgstr "Отсутствует токен сессии."
+
+#: submodules/auth_perms/core/auth_view.py:1387
+#: submodules/auth_perms/core/auth_view.py:1398
+msgid "Unknown QR type. Please try again or contact the administrator."
+msgstr ""
+"Неизвестный тип QR кода. Пожалуйста, попробуйте снова или обратитесь к "
+"администратору."
+
+#: submodules/auth_perms/core/auth_view.py:1408
+msgid "There is no QR type. Please try again or contact the administrator."
+msgstr ""
+"Отсутствует тип QR кода. Пожалуйста, попробуйте снова или обратитесь к "
+"администратору."
+
+#: submodules/auth_perms/core/auth_view.py:1607
+msgid ""
+"There is no authentication token. Please try again or contact the "
+"administrator."
+msgstr ""
+"Отсутствует аутентификационный токен. Пожалуйста, попробуйте снова или "
+"обратитесь к администратору."
+
+#: submodules/auth_perms/core/auth_view.py:1615
+msgid ""
+"Invalid data in your authentication token. Please try again or contact "
+"the administrator."
+msgstr ""
+"Неверные данные в вашем аутентификационном токене. Пожалуйста, попробуйте"
+" снова или обратитесь к администратору."
+
+#: submodules/auth_perms/core/auth_view.py:1628
+msgid ""
+"Some error occurred while creating actor. Please try again or contact the"
+" administrator."
+msgstr ""
+"Возникла какая-то ошибка при создании эктора. Пожалуйста, попробуйте "
+"снова или обратитесь к администратору."
+
+#: submodules/auth_perms/core/auth_view.py:1641
+msgid ""
+"Some error occurred while creating session token. Please try again or "
+"contact the administrator."
+msgstr ""
+"Возникла какая-то ошибка при создании токена сессии. Пожалуйста, "
+"попробуйте снова или обратитесь к администратору."
+
+#: submodules/auth_perms/core/auth_view.py:1645
+msgid "Session token was successfully created."
+msgstr "Токен сессии был успешно создан."
+
+#: submodules/auth_perms/core/auth_view.py:1755
+#: submodules/auth_perms/core/auth_view.py:1768
+msgid "Some error occurred while getting service info."
+msgstr "Возникла какая-то ошибка при получении информации о сервисе."
+
+#: submodules/auth_perms/core/decorators.py:32
+#: submodules/auth_perms/core/decorators.py:181
+#: submodules/auth_perms/core/decorators.py:226
+#, fuzzy
+msgid "Actor have no session token."
+msgstr "У эктора отсутствует сессия."
+
+#: submodules/auth_perms/core/decorators.py:36
+#: submodules/auth_perms/core/decorators.py:185
+#: submodules/auth_perms/core/decorators.py:230
+msgid "Actor have no session."
+msgstr "У эктора отсутствует сессия."
+
+#: submodules/auth_perms/core/decorators.py:47
+#: submodules/auth_perms/core/decorators.py:190
+#: submodules/auth_perms/core/decorators.py:235
+msgid "Actor have no session or APT54."
+msgstr "У эктора отсутствует сессия или аутентификационный токен."
+
+#: submodules/auth_perms/core/decorators.py:50
+msgid "APT54 expired"
+msgstr "APT54 просрочен"
+
+#: submodules/auth_perms/core/decorators.py:56
+msgid "Actor not found."
+msgstr "Эктор не найден."
+
+#: submodules/auth_perms/core/decorators.py:62
+msgid "Actor is banned."
+msgstr "Эктор находится в группе бан."
+
+#: submodules/auth_perms/core/decorators.py:117
+#: submodules/auth_perms/core/decorators.py:194
+#: submodules/auth_perms/core/decorators.py:239
+msgid "There is no such actor."
+msgstr "Такого эктора не существует."
+
+#: submodules/auth_perms/core/decorators.py:129
+#: submodules/auth_perms/core/decorators.py:203
+#: submodules/auth_perms/core/decorators.py:245
+#: submodules/auth_perms/core/decorators.py:266
+#: submodules/auth_perms/core/decorators.py:270
+#: submodules/auth_perms/core/decorators.py:283
+#: submodules/auth_perms/core/decorators.py:287
+#: submodules/auth_perms/core/shared_model/decorator.py:24
+#: submodules/auth_perms/core/shared_model/decorator.py:29
+msgid "Permissions denied."
+msgstr "Отказано в правах доступа."
+
+#: submodules/auth_perms/core/decorators.py:154
+msgid "Unsupported Media Type."
+msgstr "Неподдерживаемый медиа тип."
+
+#: submodules/auth_perms/core/decorators.py:305
+msgid "Admin panel isn't available out of the standalone mode."
+msgstr "Меню админа доступно только в standalone режиме"
+
+#: submodules/auth_perms/core/exceptions.py:18
+msgid "Database error."
+msgstr "Ошибка базы данных."
+
+#: submodules/auth_perms/core/exceptions.py:31
+msgid "Actor apt54 expired! You need update it."
+msgstr "У эктора просрочен аутентификационный токен! Вам необходимо его обновить."
+
+#: submodules/auth_perms/core/exceptions.py:39
+msgid "Error with getting salt."
+msgstr "Ошибка с получением соли."
+
+#: submodules/auth_perms/core/exceptions.py:48
+msgid "Error with getting apt54."
+msgstr "Ошибка с получением apt54."
+
+#: submodules/auth_perms/core/exceptions.py:57
+msgid "Error with getting session."
+msgstr "Ошибка с получением сессии."
+
+#: submodules/auth_perms/core/exceptions.py:66
+msgid "Invalid service class."
+msgstr "Неверный класс сервиса."
+
+#: submodules/auth_perms/core/exceptions.py:75
+msgid "Auth service is unavailable."
+msgstr "Аутентификационный сервис недоступен."
+
+#: submodules/auth_perms/core/exceptions.py:93
+msgid "Some error occurred with sending request."
+msgstr "Возникла какая-то ошибка с отправкой запроса."
+
+#: submodules/auth_perms/core/exceptions.py:103
+msgid "Static group is missing."
+msgstr "Статическая группа отсутствует."
+
+#: submodules/auth_perms/core/exceptions.py:113
+msgid "Wrong service type."
+msgstr "Неверный тип сервиса."
+
+#: submodules/auth_perms/core/permaction_view.py:77
+#: submodules/auth_perms/core/permaction_view.py:100
+#: submodules/auth_perms/core/permaction_view.py:182
+#: submodules/auth_perms/core/permaction_view.py:206
+#, fuzzy
+msgid "Permactions update failed."
+msgstr "Отказано в правах доступа."
+
+#: submodules/auth_perms/core/service_view.py:364
+msgid "Such actor does not exist"
+msgstr "Такого эктора не существует"
+
+#: submodules/auth_perms/core/utils.py:450
+msgid "You are in ban group. Please contact the administrator to set you role."
+msgstr ""
+"Вы находитесь в бан группе. Пожалуйста, обратитесь к администратору, "
+"чтобы он установил вам роль."
+
+#: submodules/auth_perms/core/templates/auth.html:48
+msgid "Comming Soon..."
+msgstr "Скоро будет..."
+
+#: submodules/auth_perms/core/templates/auth.html:49
+msgid "Use other language please. We are working on translation"
+msgstr "Используйте другой язык, пожалуйста. Мы работаем над переводом"
+
+#: submodules/auth_perms/core/templates/auth.html:92
+msgid "Welcome to EcoSystem 54 based service"
+msgstr "Добро пожаловать на сервис, основанный на Ecosystem 54."
+
+#: submodules/auth_perms/core/templates/auth.html:93
+msgid "Please, choose the option you need"
+msgstr "Пожалуйста, выберите действие"
+
+#: submodules/auth_perms/core/templates/auth.html:107
+#: submodules/auth_perms/core/templates/auth.html:268
+msgid "Sign In"
+msgstr "Войти"
+
+#: submodules/auth_perms/core/templates/auth.html:120
+#: submodules/auth_perms/core/templates/auth.html:373
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: submodules/auth_perms/core/templates/auth.html:133
+msgid "Help Me"
+msgstr "Помощь"
+
+#: submodules/auth_perms/core/templates/auth.html:139
+msgid "1. Download application"
+msgstr "1. Скачайте приложение"
+
+#: submodules/auth_perms/core/templates/auth.html:140
+msgid "First of all you need to download EcoSystem 54 application."
+msgstr "Сначала вам необходимо скачать приложение EcoSystem 54"
+
+#: submodules/auth_perms/core/templates/auth.html:143
+msgid "Android"
+msgstr "Android"
+
+#: submodules/auth_perms/core/templates/auth.html:148
+msgid "iPhone"
+msgstr "iOS"
+
+#: submodules/auth_perms/core/templates/auth.html:157
+msgid "2. Create an account"
+msgstr "2. Создать аккаунт"
+
+#: submodules/auth_perms/core/templates/auth.html:159
+msgid "Create a new EcoSystem 54 account via sign up form or scanning QR code."
+msgstr ""
+"Создать новый аккаунт в EcoSystem 54 при помощи формы регистрации или "
+"сканирования QR кода."
+
+#: submodules/auth_perms/core/templates/auth.html:165
+msgid "3. Contact your administrator"
+msgstr "3. Обратитесь к администратору"
+
+#: submodules/auth_perms/core/templates/auth.html:172
+msgid "Account Verification"
+msgstr "Верификация аккаунта"
+
+#: submodules/auth_perms/core/templates/auth.html:173
+msgid ""
+"After the registration process, you do not have any rights to view / "
+"create / delete content. After your confirmation, the administrator will "
+"assign you personal access."
+msgstr ""
+"После процесса регистрации, у вас отсутствуют права доступа на получение "
+"/ создание / удаление контента. После проверки, администратор назначит "
+"вам персональные права доступа."
+
+#: submodules/auth_perms/core/templates/auth.html:177
+msgid ""
+"You have been successfully registered. Please contact your administrator "
+"to define your role and get an access to the system."
+msgstr ""
+"Вы успешно зарегистрированы. Пожалуйста, обратитесь к администратору, "
+"чтобы он назначил вам роль и дал права доступа к системе."
+
+#: submodules/auth_perms/core/templates/auth.html:183
+msgid "4. So easy to use"
+msgstr "4. Так просто использовать"
+
+#: submodules/auth_perms/core/templates/auth.html:190
+msgid "What is Profile service?"
+msgstr "Что за Profile сервис?"
+
+#: submodules/auth_perms/core/templates/auth.html:191
+msgid ""
+"Profile service is the right palce where you can add/change you personal "
+"information. In additional to this, you can also check you personal list "
+"of permissions."
+msgstr ""
+"Profile сервис это место где вы можете добавлять/менять ваши персональные"
+" данные. В дополнение к этому, вы также можете просмотреть свой "
+"персональный список прав доступа."
+
+#: submodules/auth_perms/core/templates/auth.html:195
+msgid ""
+"As soon as administrator grants access, profile service will be available"
+" for you."
+msgstr ""
+"Как только администратор назначит вам права доступа, Profile сервис будет"
+" доступен вам."
+
+#: submodules/auth_perms/core/templates/auth.html:196
+msgid "Go to Profile service"
+msgstr "Перейти в Profile сервис"
+
+#: submodules/auth_perms/core/templates/auth.html:217
+msgid "Login/Password"
+msgstr "Форма логин/пароль"
+
+#: submodules/auth_perms/core/templates/auth.html:230
+msgid "Sign In with Auth"
+msgstr "Войти через Auth"
+
+#: submodules/auth_perms/core/templates/auth.html:243
+#: submodules/auth_perms/core/templates/auth.html:332
+msgid "QR code"
+msgstr "QR код"
+
+#: submodules/auth_perms/core/templates/auth.html:250
+msgid "Sign into your EcoSystem 54 account via sign in form"
+msgstr "Войти в ваш EcoSystem 54 аккаунт при помощи формы"
+
+#: submodules/auth_perms/core/templates/auth.html:254
+#: submodules/auth_perms/core/templates/auth.html:353
+msgid "E-mail/Login"
+msgstr "E-mail/Логин"
+
+#: submodules/auth_perms/core/templates/auth.html:255
+#: submodules/auth_perms/core/templates/auth.html:354
+#, fuzzy
+msgid "Enter email or login"
+msgstr "Введите e-mail"
+
+#: submodules/auth_perms/core/templates/auth.html:258
+#: submodules/auth_perms/core/templates/auth.html:359
+msgid "Password"
+msgstr "Пароль"
+
+#: submodules/auth_perms/core/templates/auth.html:259
+#: submodules/auth_perms/core/templates/auth.html:360
+msgid "Enter password"
+msgstr "Введите пароль"
+
+#: submodules/auth_perms/core/templates/auth.html:280
+msgid "Sign into your EcoSystem 54 account by scanning QR code"
+msgstr "Войти в ваш EcoSystem 54 аккаунт при помощи сканирования QR кода"
+
+#: submodules/auth_perms/core/templates/auth.html:285
+#: submodules/auth_perms/core/templates/auth.html:293
+#: submodules/auth_perms/core/templates/auth.html:386
+#: submodules/auth_perms/core/templates/auth.html:394
+msgid "Get a new QR code"
+msgstr "Получить новый QR код"
+
+#: submodules/auth_perms/core/templates/auth.html:319
+msgid "Register form"
+msgstr "Форма регистрации"
+
+#: submodules/auth_perms/core/templates/auth.html:339
+msgid "Create a new EcoSystem 54 account via sign up form"
+msgstr "Создать новый EcoSystem 54 аккаунт при помощи формы регистрации"
+
+#: submodules/auth_perms/core/templates/auth.html:343
+msgid "First name"
+msgstr "Имя"
+
+#: submodules/auth_perms/core/templates/auth.html:344
+msgid "Enter first name"
+msgstr "Введите имя"
+
+#: submodules/auth_perms/core/templates/auth.html:347
+msgid "Surname"
+msgstr "Фамилия"
+
+#: submodules/auth_perms/core/templates/auth.html:348
+msgid "Enter surname"
+msgstr "Введите фамилию"
+
+#: submodules/auth_perms/core/templates/auth.html:363
+#: submodules/auth_perms/core/templates/auth.html:364
+msgid "Confirm password"
+msgstr "Подтверждение пароля"
+
+#: submodules/auth_perms/core/templates/auth.html:380
+msgid "Create a new EcoSystem 54 account by scanning QR code"
+msgstr "Создать новый EcoSystem 54 аккаунт при помощи сканирования QR кода"
+
+#~ msgid "Wrong data"
+#~ msgstr "Неверные данные"
+
+#~ msgid "Signature verification failed"
+#~ msgstr "Ошибка проверки подписи"
+
+#~ msgid "Error with creating actor"
+#~ msgstr "Ошибка при создании эктора"
+
+#~ msgid "Actor successfully created"
+#~ msgstr "Эктор успешно создан"
+
+#~ msgid "Actors successfully updated"
+#~ msgstr "Экторы успешно обновлены"
+
+#~ msgid "Actors successfully deleted"
+#~ msgstr "Экторы успешно удалены"
+
+#~ msgid "Some error occurred while getting service info"
+#~ msgstr "Возникла какая-то ошибка при получении информации о сервисе"
+
+#~ msgid "Wrong data was sent."
+#~ msgstr "Неверные данные были отправлены."
+
+#~ msgid "There is no token. Please try again or contact the administrator."
+#~ msgstr ""
+#~ "Отсутсвует аутентификационный токен. Пожалуйста, "
+#~ "попробуйте снова или обратитесь к "
+#~ "администратору."
+
+#~ msgid "Invalid data in token. Please try again or contact the administrator."
+#~ msgstr ""
+#~ "Неверные данные в аутентификационном токене."
+#~ " Пожалуйста, попробуйте снова или "
+#~ "обратитесь к администратору."
+
+#~ msgid ""
+#~ "Some error occurred while creating user."
+#~ " Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+#~ "Возникла какая-то ошибка при создании "
+#~ "эктора. Пожалуйста, попробуйте снова или "
+#~ "обратитесь к администратору."
+
+#~ msgid "Session token successfully created."
+#~ msgstr "Токен сессии был успешно создан."
+
+#~ msgid "Some error occurred while creating verification data."
+#~ msgstr "Возникла какая-то ошибка при созданиии верификационных данных."
+
+#~ msgid "Some error occurred with admin group"
+#~ msgstr "Возникла какая-то ошибка с админ группой"
+
+#~ msgid "Can not be such default group"
+#~ msgstr "Данная группа не может быть по умолчанию"
+
+#~ msgid ""
+#~ "Some error occurred while user "
+#~ "registration. Please contact the "
+#~ "administrator."
+#~ msgstr ""
+#~ "Возникла какая-то ошибка при регистрации "
+#~ "эктора. Пожалуйста, свяжитесь с "
+#~ "администратором."
+
+#~ msgid "User with such email already exists."
+#~ msgstr "Пользователь с таким e-mail адресом уже существует."
+
+#~ msgid "Your email is invalid. Please check it."
+#~ msgstr "Ваш e-mail адрес содержит ошибку. Пожалуйста проверьте его."
+
+#~ msgid "Error with recognizing auth service."
+#~ msgstr "Ошибка с определением аутентификационного сервиса."
+
+#~ msgid ""
+#~ "Some error occurred while creating user."
+#~ " Please try again or contact the "
+#~ "administrator"
+#~ msgstr ""
+#~ "Возникла какая-то ошибка с созданием "
+#~ "эктора. Пожалуйста, попробуйте снова или "
+#~ "обратитесь к администратору"
+
+#~ msgid "User with such email address is already exists."
+#~ msgstr "Пользователь с таким e-mail адресом уже существует."
+
+#~ msgid "Wrong data format."
+#~ msgstr "Неверный тип данных."
+
+#~ msgid "Wrong optional data. Invalid parameters."
+#~ msgstr "Неверные опицональные данные. Неверные параметры."
+
+#~ msgid "Some error occurred while creating user. Please try again"
+#~ msgstr ""
+#~ "Возникла какая-то ошибка при создании "
+#~ "эктора. Пожалуйста попробуйте снова"
+
+#~ msgid "You are successfully got your token."
+#~ msgstr "Вы успешно получили свой аутентификационный токен."
+
+#~ msgid ""
+#~ "You have no important verification data"
+#~ " in your account. Please contact the"
+#~ " administrator."
+#~ msgstr ""
+#~ "В вашем аккаунте отсутствует важная "
+#~ "верификационная информация. Пожалуйста обратитесь"
+#~ " к администратору."
+
+#~ msgid "There is no such user. Please contact the administrator"
+#~ msgstr "Не существует такого эктора. Пожалуйста, обратитесь к администратору"
+
+#~ msgid ""
+#~ "Some error occurred with getting your"
+#~ " token. Please try again or contact"
+#~ " the administrator."
+#~ msgstr ""
+#~ "Возникла какая-то ошибка при получении "
+#~ "вашего аутентификационного токена сессии. "
+#~ "Пожалуйста, попробуй снова или обратитесь "
+#~ "к администратору"
+
+#~ msgid ""
+#~ "Some error occurred while user creating."
+#~ " Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+#~ "Возникла какая-то ошибка при создании "
+#~ "эктора. Пожалуйста, попробуйте снова или "
+#~ "обратитесь к администратору"
+
+#~ msgid "You token is invalid. Please contact the administrator."
+#~ msgstr ""
+#~ "Ваш аутентификационный токен неверный. "
+#~ "Пожалуйста, обратитесь к администратору"
+
+#~ msgid "Your token is invalid. Please try again or contact the administrator."
+#~ msgstr ""
+#~ "Ваш аутентификационный токен неверный. "
+#~ "Пожалуйста, попробуйте снова или обратитесь"
+#~ " к администратору."
+
+#~ msgid "There is no such user. Please try again or contact the administrator."
+#~ msgstr "Не существует такого эктора. Пожалуйста, обратитесь к администратору."
+
+#~ msgid ""
+#~ "Some error occurred while session "
+#~ "creating. Please try again or contact"
+#~ " the administrator."
+#~ msgstr ""
+#~ "Возникла какая-то ошибка с созданием "
+#~ "токена сессии. Пожалуйста, попробуйте снова"
+#~ " или обратитесь к администратору."
+
+#~ msgid "User with such email not found."
+#~ msgstr "Эктор с таким e-mail адресом не найден."
+
+#~ msgid "Invalid request type"
+#~ msgstr "Неверный тип запроса"
+
+#~ msgid "Session token saved"
+#~ msgstr "Токен сессии был успешно сохранен"
+
+#~ msgid "User have no session token"
+#~ msgstr "У эктера отсутствует токен сессии"
+
+#~ msgid "User have no session"
+#~ msgstr "У эктера отсутствует активная сессии"
+
+#~ msgid "User have no session or APT54"
+#~ msgstr "У эктера отсутствует сессия или аутентификационный токен"
+
+#~ msgid "User not found"
+#~ msgstr "Эктор не найден"
+
+#~ msgid "User is banned"
+#~ msgstr "Эктор забанен"
+
+#~ msgid "There is no such user"
+#~ msgstr "Такого эктора на существует"
+
+#~ msgid "Permissions denied"
+#~ msgstr "У вас нет прав доступа"
+
+#~ msgid "Unsupported Media Type"
+#~ msgstr "Неподдерживаем медиа тип"
+
+#~ msgid "Database error"
+#~ msgstr "Ошибка базы данных"
+
+#~ msgid "User apt54 expired! You need update it."
+#~ msgstr "Аутентификационный токен эктора просрочен! Вам необходить обновить его."
+
+#~ msgid "Error with getting salt"
+#~ msgstr "Ошибка получения соли"
+
+#~ msgid "Error with getting apt54"
+#~ msgstr "Ошибка получения APT54"
+
+#~ msgid "Error with getting session"
+#~ msgstr "Ошибка с получением сессии"
+
+#~ msgid "Invalid service class"
+#~ msgstr "Неверный класс сервиса"
+
+#~ msgid "Auth service is unavailable"
+#~ msgstr "Аутентификационный сервис недоступен"
+
+#~ msgid "Error with sending request"
+#~ msgstr "Ошибка с отправкой запроса"
+
+#~ msgid "Static group is missing"
+#~ msgstr "Стандартная группа отсутствует"
+
+#~ msgid "Wrong service type"
+#~ msgstr "Неверный тип сервиса"
+
+#~ msgid "Invalid request params"
+#~ msgstr "Неверные параметры запроса"
+
+#~ msgid "Error with saving data in database"
+#~ msgstr "Ошибка с сохранением данных в базу данных"
+
+#~ msgid "Permissions successfully updated"
+#~ msgstr "Права доступа успешно обновлены"
+
+#~ msgid "Permission successfully deleted"
+#~ msgstr "Права доступа успешно удалены"
+
+#~ msgid "Phantom relation successfully created"
+#~ msgstr "Связь фантома успешно создана"
+
+#~ msgid "There is no such phantom object"
+#~ msgstr "Не существует такого объекта фантома"
+
+#~ msgid "Phantom relation successfully deleted"
+#~ msgstr "Связь фантома успешно удалена"
+
+#~ msgid "Error with getting socket id"
+#~ msgstr "Ошибка с получение id сокета"
+
+#~ msgid "There is no session token"
+#~ msgstr "Отсутствует токен сессии"
+
+#~ msgid "Invalid uuid value"
+#~ msgstr "Неверное uuid значение"
+
+#~ msgid "Invalid data value"
+#~ msgstr "Неверное значение данных"
+
+#~ msgid "Invalid data target actor"
+#~ msgstr "Неверное значение целевого пользователя"
+
+#~ msgid "You can not use this"
+#~ msgstr "Вы не можете использовать это"
+
+#~ msgid "Use English. We are working on translation"
+#~ msgstr "Используйте английский. Мы работаем над переводом"
+
+#~ msgid "Actor was successfully created."
+#~ msgstr "Эктор был успешно создан."
+
+#~ msgid "Actor was successfully updated."
+#~ msgstr "Эктор был успешно обновлен."
+
+#~ msgid "Actor was successfully deleted."
+#~ msgstr "Эктор был успешно удален."
+
+#~ msgid ""
+#~ "Auth service is unreachable. Please try"
+#~ " again or contact the administrator"
+#~ msgstr ""
+#~ "Аутентификационный сервис недоступен. Пожалуйста,"
+#~ " попробуйте снова или обратитесь к "
+#~ "администратору"
+
+#~ msgid "You are successfully receive your authentication token."
+#~ msgstr "Вы успешно получили ваш аутентификационный токен."
+
+#~ msgid "You are successfully authorized."
+#~ msgstr "Вы успешно авторизованы."
+
+#~ msgid "Actor have no session token."
+#~ msgstr "У эктора отсутствует токен сессии."
+
+#~ msgid "There is no session_token"
+#~ msgstr "Отсутствет токен сессии"
+
+#~ msgid "There is no such actor"
+#~ msgstr "Такого эктора не существует"
+
+#~ msgid "Invalid request data"
+#~ msgstr "Неверные данные в запросе"
+
+#~ msgid "Phantom relation successfully created."
+#~ msgstr "Связь фантома успешно создана."
+
+#~ msgid "There is no such phantom relation."
+#~ msgstr "Такой связи фантома не существует."
+
+#~ msgid "Phantom relation successfully deleted."
+#~ msgstr "Связь фантома успешно удалена."
+
+#~ msgid "Some error occurred while getting socket id."
+#~ msgstr "Возникла какая-то ошибка с получением идентификатора сокета."
+
+#~ msgid "Invalid phantom relation unique identifier."
+#~ msgstr "Неверный уникальный идентификатор связи фантома."
+
+#~ msgid "Invalid phantom actor data type. Should be unique identifier."
+#~ msgstr ""
+#~ "Неверный тип данных фантомного актера. "
+#~ "Это должен быть уникальный идентификатор."
+
+#~ msgid "Invalid target phantom actor data type. Should be unique identifier."
+#~ msgstr ""
+#~ "Неверный тип данных целевого актера. Это"
+#~ " должен быть уникальный идентификатор."
+
+#~ msgid "You can't use this function."
+#~ msgstr "Вы не можете использовать эту функцию."
+
+#~ msgid "E-mail"
+#~ msgstr "E-mail"
+
+#~ msgid "Or"
+#~ msgstr "Или"
+
+#~ msgid "Sign In with AUTH service"
+#~ msgstr "Войти при помощи AUTH сервиса"
+
+#~ msgid "Single Sign-On - Technology to sign in by Auth service session."
+#~ msgstr "Single Sign-On - технология для входа на основе сессии на Auth сервисе."
+
+#~ msgid "Permission successfully updated."
+#~ msgstr "Права доступа успешно обновлены."
+
+#~ msgid "There is no such groups %(invalid_groups)s"
+#~ msgstr "Не существует такой группы %(invalid_groups)s"
+
+#~ msgid "Some error occurred with admin group."
+#~ msgstr "Возникла какая-то ошибка с админ группой."
+
+#~ msgid "This group can't be used by default for your service."
+#~ msgstr "Эта группа не может быть использована как группа по умолчанию."
+
+#~ msgid "Some error has occurred, please contact the administrator"
+#~ msgstr "Возникла какая-то ошибка. Пожалуйста, обратитесь к администратору"
+
+#~ msgid "Some error occurred while creating actor."
+#~ msgstr "Возникла какая-то ошибка при создании эктора."
+
+#~ msgid "Some error occurred while creating permissions."
+#~ msgstr "Возникла какая-то ошибка с созданием прав доступа."
+
+#~ msgid "There is no permission such permission %(perm_id)s in database"
+#~ msgstr "Не существует такого пермишена %(perm_id)s в базе данных"
+
+#~ msgid "Permission successfully deleted."
+#~ msgstr "Права доступа успешно удалены."
+
+#~ msgid "Error with updating password. There is no such actor."
+#~ msgstr "Ошибка с обновлением пароля. Не существует такого эктора."
+
+#~ msgid "Russian"
+#~ msgstr "Русский"
+
+#~ msgid "Chinese"
+#~ msgstr "Китайский"
+
+#~ msgid "English"
+#~ msgstr "Английский"
+
+#~ msgid "Your authentication token is invalid. Please contact the administrator."
+#~ msgstr ""
+#~ "Ваш аутентификационный токен неверный. "
+#~ "Пожалуйста свяжитесь с администратором."
+
+#~ msgid ""
+#~ "Your authentication token is invalid. "
+#~ "Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+#~ "Ваш аутентификационный токен неверный. "
+#~ "Пожалуйста, попробуйте снова или свяжитесь "
+#~ "с администратором."
+
+#~ msgid "There is no such actor. Please try again or contact the administrator."
+#~ msgstr ""
+#~ "Такого эктора не существует. Пожалуйста, "
+#~ "попробуйте снова или обратитесь к "
+#~ "администратору."
+
+#~ msgid ""
+#~ "Your token expired and there is "
+#~ "some error occurred while updating it."
+#~ " Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+#~ "Ваш аутентификационный токен просрочен и "
+#~ "возникла какая-то ошибка при его "
+#~ "обновлении. Пожалуйста, попробуйте снова или"
+#~ " обратитесь к администратору."
+
+#~ msgid ""
+#~ "Some error occurred while creating "
+#~ "session. Please try again or contact "
+#~ "the administrator."
+#~ msgstr ""
+#~ "Возникла какая-то ошибка при создании "
+#~ "сессии. Пожалуйста, попробуйте снова или "
+#~ "обратитесь к администратору."
+
+#~ msgid "Services"
+#~ msgstr "Сервисы"
+

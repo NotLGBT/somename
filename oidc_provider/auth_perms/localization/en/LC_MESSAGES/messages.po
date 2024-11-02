@@ -1,0 +1,944 @@
+# English translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-08-09 11:26+0300\n"
+"PO-Revision-Date: 2020-11-04 17:05+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: submodules/auth_perms/core/actor_view.py:98
+#: submodules/auth_perms/core/auth_view.py:267
+#: submodules/auth_perms/core/auth_view.py:368
+#: submodules/auth_perms/core/auth_view.py:671
+#: submodules/auth_perms/core/auth_view.py:823
+#: submodules/auth_perms/core/auth_view.py:843
+#: submodules/auth_perms/core/auth_view.py:867
+#: submodules/auth_perms/core/auth_view.py:1079
+#: submodules/auth_perms/core/auth_view.py:1595
+#: submodules/auth_perms/core/invite_link_view.py:52
+msgid "Invalid request data."
+msgstr ""
+
+#: submodules/auth_perms/core/actor_view.py:102
+#: submodules/auth_perms/core/auth_view.py:294
+#: submodules/auth_perms/core/auth_view.py:595
+#: submodules/auth_perms/core/auth_view.py:714
+#: submodules/auth_perms/core/auth_view.py:726
+#: submodules/auth_perms/core/auth_view.py:995
+#: submodules/auth_perms/core/auth_view.py:1073
+#: submodules/auth_perms/core/auth_view.py:1601
+msgid "Signature verification failed."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:94
+#: submodules/auth_perms/core/auth_view.py:317
+msgid "Email you have inputted is invalid. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:101
+msgid ""
+"Login you have inputted is invalid. Please check it. Login length must be"
+" from 3 to 36 and it must contain alphanumeric values, dots or "
+"underscores"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:107
+msgid "Phone number you have inputted is invalid. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:205
+msgid ""
+"Some error occurred while actor registration. Please contact the "
+"administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:211
+msgid "You are successfully registered."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:285
+msgid ""
+"There is no verification data based on received data. \n"
+" Please get new QR code."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:309
+msgid "Actor with such email already exists."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:323
+msgid "There is no email in received data."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:340
+msgid ""
+"Some error occurred while creating actor. Please try again or contact the"
+" administrator"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:382
+msgid "Password length too short. Minimum 4 characters"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:387
+msgid "Password and password confirmation do not match. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:404
+msgid "Actor with such email already exists"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:406
+msgid "Actor with such login already exists"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:408
+msgid "Actor with such phone number already exists"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:419
+msgid "Invalid request data type."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:424
+msgid "Invalid parameter for login in optional data."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:432
+msgid "Invalid parameter password in optional data."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:498
+msgid "Some error occurred while creating actor. Please try again."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:587
+msgid "Unknown service."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:633
+#: submodules/auth_perms/core/auth_view.py:1416
+msgid ""
+"Some error occurred while creating verification data. Please try again or"
+" contact the administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:683
+msgid ""
+"There is no verification data based on received data. \n"
+" Please get new QR code. "
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:695
+msgid ""
+"There is no your public key for your actor. Please contact the "
+"administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:738
+msgid "There is no such actor. Please contact the administrator"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:744
+msgid ""
+"Auth service is unreachable. Please try again or contact the "
+"administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:755
+msgid ""
+"Some error occurred with getting your authentication token. Please try "
+"again or contact the administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:885
+msgid "There is no actor with such email. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:887
+msgid "There is no actor with such login. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:889
+msgid "There is no actor with such phone number. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:891
+msgid "There is no actor with such email and login. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:893
+msgid "There is no actor with such data. Please check it."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:897
+#: submodules/auth_perms/core/auth_view.py:953
+msgid "There is no actor with such uuid."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:914
+#: submodules/auth_perms/core/auth_view.py:962
+msgid "There is no verification data based on received data."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:941
+msgid "Password verification failed."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:971
+msgid ""
+"There is no your public key for your actor. Please contact the "
+"administrator.\n"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1063
+msgid "Successfully executed"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1069
+msgid "Error with getting actor"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1071
+#: submodules/auth_perms/core/decorators.py:197
+#: submodules/auth_perms/core/decorators.py:242
+msgid "APT54 expired."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1075
+msgid "Actor must be Root"
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1077
+msgid "Invalid APT54 was sent."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1105
+#: submodules/auth_perms/core/auth_view.py:1146
+#: submodules/auth_perms/core/auth_view.py:1499
+#: submodules/auth_perms/core/auth_view.py:1673
+#: submodules/auth_perms/core/invite_link_view.py:46
+msgid "Invalid request type."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1117
+msgid "Session token successfully saved."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1153
+#: submodules/auth_perms/core/auth_view.py:1507
+msgid "There is no session token."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1387
+#: submodules/auth_perms/core/auth_view.py:1398
+msgid "Unknown QR type. Please try again or contact the administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1408
+msgid "There is no QR type. Please try again or contact the administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1607
+msgid ""
+"There is no authentication token. Please try again or contact the "
+"administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1615
+msgid ""
+"Invalid data in your authentication token. Please try again or contact "
+"the administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1628
+msgid ""
+"Some error occurred while creating actor. Please try again or contact the"
+" administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1641
+msgid ""
+"Some error occurred while creating session token. Please try again or "
+"contact the administrator."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1645
+msgid "Session token was successfully created."
+msgstr ""
+
+#: submodules/auth_perms/core/auth_view.py:1755
+#: submodules/auth_perms/core/auth_view.py:1768
+msgid "Some error occurred while getting service info."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:32
+#: submodules/auth_perms/core/decorators.py:181
+#: submodules/auth_perms/core/decorators.py:226
+msgid "Actor have no session token."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:36
+#: submodules/auth_perms/core/decorators.py:185
+#: submodules/auth_perms/core/decorators.py:230
+msgid "Actor have no session."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:47
+#: submodules/auth_perms/core/decorators.py:190
+#: submodules/auth_perms/core/decorators.py:235
+msgid "Actor have no session or APT54."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:50
+msgid "APT54 expired"
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:56
+msgid "Actor not found."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:62
+msgid "Actor is banned."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:117
+#: submodules/auth_perms/core/decorators.py:194
+#: submodules/auth_perms/core/decorators.py:239
+msgid "There is no such actor."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:129
+#: submodules/auth_perms/core/decorators.py:203
+#: submodules/auth_perms/core/decorators.py:245
+#: submodules/auth_perms/core/decorators.py:266
+#: submodules/auth_perms/core/decorators.py:270
+#: submodules/auth_perms/core/decorators.py:283
+#: submodules/auth_perms/core/decorators.py:287
+#: submodules/auth_perms/core/shared_model/decorator.py:24
+#: submodules/auth_perms/core/shared_model/decorator.py:29
+msgid "Permissions denied."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:154
+msgid "Unsupported Media Type."
+msgstr ""
+
+#: submodules/auth_perms/core/decorators.py:305
+msgid "Admin panel isn't available out of the standalone mode."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:18
+msgid "Database error."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:31
+msgid "Actor apt54 expired! You need update it."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:39
+msgid "Error with getting salt."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:48
+msgid "Error with getting apt54."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:57
+msgid "Error with getting session."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:66
+msgid "Invalid service class."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:75
+msgid "Auth service is unavailable."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:93
+msgid "Some error occurred with sending request."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:103
+msgid "Static group is missing."
+msgstr ""
+
+#: submodules/auth_perms/core/exceptions.py:113
+msgid "Wrong service type."
+msgstr ""
+
+#: submodules/auth_perms/core/permaction_view.py:77
+#: submodules/auth_perms/core/permaction_view.py:100
+#: submodules/auth_perms/core/permaction_view.py:182
+#: submodules/auth_perms/core/permaction_view.py:206
+msgid "Permactions update failed."
+msgstr ""
+
+#: submodules/auth_perms/core/service_view.py:364
+msgid "Such actor does not exist"
+msgstr ""
+
+#: submodules/auth_perms/core/utils.py:450
+msgid "You are in ban group. Please contact the administrator to set you role."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:48
+msgid "Comming Soon..."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:49
+msgid "Use other language please. We are working on translation"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:92
+msgid "Welcome to EcoSystem 54 based service"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:93
+msgid "Please, choose the option you need"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:107
+#: submodules/auth_perms/core/templates/auth.html:268
+msgid "Sign In"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:120
+#: submodules/auth_perms/core/templates/auth.html:373
+msgid "Sign Up"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:133
+msgid "Help Me"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:139
+msgid "1. Download application"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:140
+msgid "First of all you need to download EcoSystem 54 application."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:143
+msgid "Android"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:148
+msgid "iPhone"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:157
+msgid "2. Create an account"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:159
+msgid "Create a new EcoSystem 54 account via sign up form or scanning QR code."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:165
+msgid "3. Contact your administrator"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:172
+msgid "Account Verification"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:173
+msgid ""
+"After the registration process, you do not have any rights to view / "
+"create / delete content. After your confirmation, the administrator will "
+"assign you personal access."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:177
+msgid ""
+"You have been successfully registered. Please contact your administrator "
+"to define your role and get an access to the system."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:183
+msgid "4. So easy to use"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:190
+msgid "What is Profile service?"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:191
+msgid ""
+"Profile service is the right palce where you can add/change you personal "
+"information. In additional to this, you can also check you personal list "
+"of permissions."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:195
+msgid ""
+"As soon as administrator grants access, profile service will be available"
+" for you."
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:196
+msgid "Go to Profile service"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:217
+msgid "Login/Password"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:230
+msgid "Sign In with Auth"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:243
+#: submodules/auth_perms/core/templates/auth.html:332
+msgid "QR code"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:250
+msgid "Sign into your EcoSystem 54 account via sign in form"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:254
+#: submodules/auth_perms/core/templates/auth.html:353
+msgid "E-mail/Login"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:255
+#: submodules/auth_perms/core/templates/auth.html:354
+msgid "Enter email or login"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:258
+#: submodules/auth_perms/core/templates/auth.html:359
+msgid "Password"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:259
+#: submodules/auth_perms/core/templates/auth.html:360
+msgid "Enter password"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:280
+msgid "Sign into your EcoSystem 54 account by scanning QR code"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:285
+#: submodules/auth_perms/core/templates/auth.html:293
+#: submodules/auth_perms/core/templates/auth.html:386
+#: submodules/auth_perms/core/templates/auth.html:394
+msgid "Get a new QR code"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:319
+msgid "Register form"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:339
+msgid "Create a new EcoSystem 54 account via sign up form"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:343
+msgid "First name"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:344
+msgid "Enter first name"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:347
+msgid "Surname"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:348
+msgid "Enter surname"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:363
+#: submodules/auth_perms/core/templates/auth.html:364
+msgid "Confirm password"
+msgstr ""
+
+#: submodules/auth_perms/core/templates/auth.html:380
+msgid "Create a new EcoSystem 54 account by scanning QR code"
+msgstr ""
+
+#~ msgid "Wrong data"
+#~ msgstr ""
+
+#~ msgid "Signature verification failed"
+#~ msgstr ""
+
+#~ msgid "Error with creating actor"
+#~ msgstr ""
+
+#~ msgid "Actor successfully created"
+#~ msgstr ""
+
+#~ msgid "Actors successfully updated"
+#~ msgstr ""
+
+#~ msgid "Actors successfully deleted"
+#~ msgstr ""
+
+#~ msgid "Some error occurred while getting service info"
+#~ msgstr ""
+
+#~ msgid "Wrong data was sent."
+#~ msgstr ""
+
+#~ msgid "There is no token. Please try again or contact the administrator."
+#~ msgstr ""
+
+#~ msgid "Invalid data in token. Please try again or contact the administrator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred while creating user."
+#~ " Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+
+#~ msgid "Session token successfully created."
+#~ msgstr ""
+
+#~ msgid "Some error occurred while creating verification data."
+#~ msgstr ""
+
+#~ msgid "Some error occurred with admin group"
+#~ msgstr ""
+
+#~ msgid "Can not be such default group"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred while user "
+#~ "registration. Please contact the "
+#~ "administrator."
+#~ msgstr ""
+
+#~ msgid "User with such email already exists."
+#~ msgstr ""
+
+#~ msgid "Your email is invalid. Please check it."
+#~ msgstr ""
+
+#~ msgid "Error with recognizing auth service."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred while creating user."
+#~ " Please try again or contact the "
+#~ "administrator"
+#~ msgstr ""
+
+#~ msgid "User with such email address is already exists."
+#~ msgstr ""
+
+#~ msgid "Wrong data format."
+#~ msgstr ""
+
+#~ msgid "Wrong optional data. Invalid parameters."
+#~ msgstr ""
+
+#~ msgid "Some error occurred while creating user. Please try again"
+#~ msgstr ""
+
+#~ msgid "You are successfully got your token."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You have no important verification data"
+#~ " in your account. Please contact the"
+#~ " administrator."
+#~ msgstr ""
+
+#~ msgid "There is no such user. Please contact the administrator"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred with getting your"
+#~ " token. Please try again or contact"
+#~ " the administrator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred while user creating."
+#~ " Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+
+#~ msgid "You token is invalid. Please contact the administrator."
+#~ msgstr ""
+
+#~ msgid "Your token is invalid. Please try again or contact the administrator."
+#~ msgstr ""
+
+#~ msgid "There is no such user. Please try again or contact the administrator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred while session "
+#~ "creating. Please try again or contact"
+#~ " the administrator."
+#~ msgstr ""
+
+#~ msgid "User with such email not found."
+#~ msgstr ""
+
+#~ msgid "Invalid request type"
+#~ msgstr ""
+
+#~ msgid "Session token saved"
+#~ msgstr ""
+
+#~ msgid "User have no session token"
+#~ msgstr ""
+
+#~ msgid "User have no session"
+#~ msgstr ""
+
+#~ msgid "User have no session or APT54"
+#~ msgstr ""
+
+#~ msgid "User not found"
+#~ msgstr ""
+
+#~ msgid "User is banned"
+#~ msgstr ""
+
+#~ msgid "There is no such user"
+#~ msgstr ""
+
+#~ msgid "Permissions denied"
+#~ msgstr ""
+
+#~ msgid "Unsupported Media Type"
+#~ msgstr ""
+
+#~ msgid "Database error"
+#~ msgstr ""
+
+#~ msgid "User apt54 expired! You need update it."
+#~ msgstr ""
+
+#~ msgid "Error with getting salt"
+#~ msgstr ""
+
+#~ msgid "Error with getting apt54"
+#~ msgstr ""
+
+#~ msgid "Error with getting session"
+#~ msgstr ""
+
+#~ msgid "Invalid service class"
+#~ msgstr ""
+
+#~ msgid "Auth service is unavailable"
+#~ msgstr ""
+
+#~ msgid "Error with sending request"
+#~ msgstr ""
+
+#~ msgid "Static group is missing"
+#~ msgstr ""
+
+#~ msgid "Wrong service type"
+#~ msgstr ""
+
+#~ msgid "Invalid request params"
+#~ msgstr ""
+
+#~ msgid "Error with saving data in database"
+#~ msgstr ""
+
+#~ msgid "Permissions successfully updated"
+#~ msgstr ""
+
+#~ msgid "Permission successfully deleted"
+#~ msgstr ""
+
+#~ msgid "Phantom relation successfully created"
+#~ msgstr ""
+
+#~ msgid "There is no such phantom object"
+#~ msgstr ""
+
+#~ msgid "Phantom relation successfully deleted"
+#~ msgstr ""
+
+#~ msgid "Error with getting socket id"
+#~ msgstr ""
+
+#~ msgid "There is no session token"
+#~ msgstr ""
+
+#~ msgid "Invalid uuid value"
+#~ msgstr ""
+
+#~ msgid "Invalid data value"
+#~ msgstr ""
+
+#~ msgid "Invalid data target actor"
+#~ msgstr ""
+
+#~ msgid "You can not use this"
+#~ msgstr ""
+
+#~ msgid "Use English. We are working on translation"
+#~ msgstr ""
+
+#~ msgid "Actor was successfully created."
+#~ msgstr ""
+
+#~ msgid "Actor was successfully updated."
+#~ msgstr ""
+
+#~ msgid "Actor was successfully deleted."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Auth service is unreachable. Please try"
+#~ " again or contact the administrator"
+#~ msgstr ""
+
+#~ msgid "Invalid parameter email in optional data."
+#~ msgstr ""
+
+#~ msgid "You are successfully receive your authentication token."
+#~ msgstr ""
+
+#~ msgid "You are successfully authorized."
+#~ msgstr ""
+
+#~ msgid "Actor have no session token."
+#~ msgstr ""
+
+#~ msgid "There is no session_token"
+#~ msgstr ""
+
+#~ msgid "There is no such actor"
+#~ msgstr ""
+
+#~ msgid "Invalid request data"
+#~ msgstr ""
+
+#~ msgid "Phantom relation successfully created."
+#~ msgstr ""
+
+#~ msgid "There is no such phantom relation."
+#~ msgstr ""
+
+#~ msgid "Phantom relation successfully deleted."
+#~ msgstr ""
+
+#~ msgid "Some error occurred while getting socket id."
+#~ msgstr ""
+
+#~ msgid "Invalid phantom relation unique identifier."
+#~ msgstr ""
+
+#~ msgid "Invalid phantom actor data type. Should be unique identifier."
+#~ msgstr ""
+
+#~ msgid "Invalid target phantom actor data type. Should be unique identifier."
+#~ msgstr ""
+
+#~ msgid "You can't use this function."
+#~ msgstr ""
+
+#~ msgid "E-mail"
+#~ msgstr ""
+
+#~ msgid "Enter email"
+#~ msgstr ""
+
+#~ msgid "Or"
+#~ msgstr ""
+
+#~ msgid "Sign In with AUTH service"
+#~ msgstr ""
+
+#~ msgid "Single Sign-On - Technology to sign in by Auth service session."
+#~ msgstr ""
+
+#~ msgid "Permission successfully updated."
+#~ msgstr ""
+
+#~ msgid "There is no such groups %(invalid_groups)s"
+#~ msgstr ""
+
+#~ msgid "Some error occurred with admin group."
+#~ msgstr ""
+
+#~ msgid "This group can't be used by default for your service."
+#~ msgstr ""
+
+#~ msgid "Some error has occurred, please contact the administrator"
+#~ msgstr ""
+
+#~ msgid "Some error occurred while creating actor."
+#~ msgstr ""
+
+#~ msgid "Some error occurred while creating permissions."
+#~ msgstr ""
+
+#~ msgid "There is no permission such permission %(perm_id)s in database"
+#~ msgstr ""
+
+#~ msgid "Permission successfully deleted."
+#~ msgstr ""
+
+#~ msgid "Error with updating password. There is no such actor."
+#~ msgstr ""
+
+#~ msgid "Russian"
+#~ msgstr ""
+
+#~ msgid "Chinese"
+#~ msgstr ""
+
+#~ msgid "English"
+#~ msgstr ""
+
+#~ msgid "Your authentication token is invalid. Please contact the administrator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your authentication token is invalid. "
+#~ "Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+
+#~ msgid "There is no such actor. Please try again or contact the administrator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your token expired and there is "
+#~ "some error occurred while updating it."
+#~ " Please try again or contact the "
+#~ "administrator."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some error occurred while creating "
+#~ "session. Please try again or contact "
+#~ "the administrator."
+#~ msgstr ""
+
+#~ msgid "Services"
+#~ msgstr ""
+

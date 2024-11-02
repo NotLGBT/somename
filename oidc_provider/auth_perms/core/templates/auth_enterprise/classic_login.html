@@ -1,0 +1,89 @@
+<script src="{{ url_for('auth_submodule.static', filename='js/md5.min.js') }}"></script>
+
+<script>
+    function AuthClassicSignIn(login_values, password){
+        let identification_data = {
+            "actor_type": "classic_user",
+            "step": "identification"
+        };
+        if (login_values.email) {
+            identification_data['email'] = login_values.email;
+        }
+        if (login_values.login) {
+            identification_data['login'] = login_values.login;
+        }
+        if (login_values.phone_number) {
+            identification_data['phone_number'] = login_values.phone_number;
+        }
+
+        let authentication_url = "{{ url_for('auth_submodule.auth') }}";
+
+        fetch(
+            authentication_url,
+            {
+                method: "post",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(identification_data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    response.json().then((response) => {
+                        let check_secret_data = {
+                            "actor_type": "classic_user",
+                            "step": "check_secret",
+                            "temporary_session": response['temporary_session'],
+                            "password": md5(md5(password) + response['temporary_session'])
+                        };
+                        
+                        fetch(
+                            authentication_url,
+                            {
+                                method: "post",
+                                headers: {
+                                    "Accept": "application/json",
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(check_secret_data)
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    document.cookie = "{{ config.get('SERVICE_NAME') | title }}=" + response["session_token"] + "; path=/";
+                                    afterSaveSession();
+                                }
+                                else {
+                                    response.json().then((json) => {
+                                        handleSignInError(json);
+                                    })
+                                }
+                            })
+                            .catch(error => {
+                                error.json().then((json) => {
+                                    handleSignInError(json.error_message || 'Something went wrong');
+                                })
+                            })
+                            
+                    })
+                } else {
+                    response.json().then((json) => {
+                        handleSignInError(json);
+                    })
+                }
+            })
+            .catch(error => {
+                error.json().then((json) => {
+                    handleSignInError(json.error_message || 'Something went wrong');
+                })
+            })
+    }
+
+    function afterSaveSession() {
+        window.location.replace('/');
+    }
+
+    function handleSignInError(json) {
+        alert(json.error_message || 'Something went wrong');
+    }
+</script>

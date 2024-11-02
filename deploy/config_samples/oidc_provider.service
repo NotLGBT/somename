@@ -1,0 +1,16 @@
+[Unit]
+Description=Gunicorn for oidc_provider service
+After=network.target
+
+[Service]
+Type=simple
+User=oidc
+Group=oidc
+WorkingDirectory=/home/oidc_provider
+Environment="PATH=/home/oidc_provider/venv/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
+ExecStart=/home/oidc_provider/venv/bin/gunicorn --log-level error --access-logfile - --error-logfile /home/oidc_provider/logs/gunicorn/error.log -k gevent -w 1 -b unix:/tmp/oicd_provider_gunicorn.sock wsgi:app
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy = default.target
